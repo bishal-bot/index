@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+    
+            <title>Database Models, Designs and Relationship</title>
+        </head>
+        <body style="background-color: aquamarine; line-height:5px; ">
+            
+        <center><b><p style="font-size: 60px; line-height: 25px;">Day 10 Assignment </p>
+        </b></center> 
+        <left><b><p style="font-size: 30px;">Database Models, Designs and Relationship</p></b></left>
+    <p style="font-size: 20px;">Today we'll be discussing about the database models, designs and relationship in database. We'll go into the topic detailly and deeply and learn about them.</p> <br>
+    <b><p style="font-size: 25px;"> Database Models</p></b>
+    <p style="font-size: 20px;">Database models define the structure of a database and dictate how data is stored, organized, and manipulated.</p> <br>
+    <b><p style="font-size: 25px;">Types of Database Models</p></b>
+    <p style="font-size: 20px;">The main types of database models are :</p> <br>
+    <b><p style="font-size: 20px;">1. Hierarchical Model</p></b>
+
+<p style="font-size: 20px;">i. Data is organized in a tree-like structure with parent-child relationships.</p>
+<p style="font-size: 20px;">ii. Each parent can have multiple children, but each child has only one parent.</p>
+<p style="font-size: 20px;">iii.Example: A company's organizational chart.</p> <br>
+
+<b><p style="font-size: 20px;">2. Network Model</p></b>
+<p style="font-size: 20px;">i. Similar to the hierarchical model but allows many-to-many relationships.</p>
+<p style="font-size: 20px;">ii. Data is represented as a graph with nodes and edges.</p>
+<p style="font-size: 20px;">iii. More flexible than the hierarchical model but more complex.</p>
+<p style="font-size: 20px;">iv. Example: A university's course enrollment system where courses can have multiple students and students can enroll in multiple courses.
+</p> <br>
+<b><p style="font-size: 20px;">3. Relational Model</p></b>
+
+<p style="font-size: 20px;">i. Data is organized into tables (relations) with rows and columns.</p>
+<p style="font-size: 20px;">ii. Tables are related through primary keys and foreign keys.</p>
+<p style="font-size: 20px;">iii. The most widely used model due to its simplicity and ease of use.</p>
+<p style="font-size: 20px;">iv. Example: A customer database where orders are linked to customers through a customer ID.
+</p> <br>
+
+<b><p style="font-size: 20px;">4. Object-Oriented Model</p></b>
+<p style="font-size: 20px;">i. Data is represented as objects, similar to object-oriented programming.</p>
+<p style="font-size: 20px;">ii. Supports complex data types and relationships.</p>
+<p style="font-size: 20px;">iii. Useful for applications requiring complex data representations.</p>
+<p style="font-size: 20px;">iv. Example: A CAD system storing designs as objects with properties and methods.
+</p> <br>
+<b><p style="font-size: 20px;">5. Document model</p></b>
+<p style="font-size: 20px;">i. Data is stored in document format, typically in JSON or XML.</p>
+<p style="font-size: 20px;">ii. Each document can have a unique structure, making it flexible for unstructured data.</p>
+<p style="font-size: 20px;">iii. Commonly used in NoSQL databases.</p>
+<p style="font-size: 20px;">iv. Example: A content management system storing articles as documents.</p>
+<br>
+<br>
+<b><p style="font-size: 25px;">Database Design</p></b>
+<p style="font-size: 20px;">Database design is the process of defining the structure of a database to meet specific requirements and ensure efficient data management.</p> <br>
+<b><p style="font-size: 25px;">Types of Database Designs</p></b>
+    <p style="font-size: 20px;">The main types of database designs are :</p> <br>
+<b><p style="font-size: 20px;">1. Requirement Analysis</p></b>
+<p style="font-size: 20px;">i. Understanding the needs of the users and the purpose of the database.</p>
+<p style="font-size: 20px;">ii. Identifying the types of data to be stored and the operations to be performed.</p> <br>
+<b><p style="font-size: 20px;">2. Conceptual Design</p></b>
+<p style="font-size: 20px;">i.Creating an Entity-Relationship (ER) diagram to represent entities, attributes, and relationships.</p>
+<p style="font-size: 20px;">ii. Defining entities (e.g., Customer, Order) and their attributes (e.g., CustomerID, OrderDate).</p>
+<p style="font-size: 20px;">iii. Identifying relationships between entities (e.g., Customers place Orders).</p> <br>
+<b><p style="font-size: 20px;">3. Logical Design</p></b>
+<p style="font-size: 20px;">i.Converting the ER diagram into a logical schema using a relational model.</p>
+<p style="font-size: 20px;">ii. Defining tables, columns, primary keys, and foreign keys.</p>
+<p style="font-size: 20px;">iii. Ensuring normalization to reduce data redundancy and improve data integrity.</p> <br>
+<b><p style="font-size: 20px;">4. Physical Design</p></b>
+<p style="font-size: 20px;">i. Determining the physical storage structure and access methods.</p>
+<p style="font-size: 20px;">ii. Optimizing the database for performance, considering factors like indexing and partitioning.
+</p> <br>
+<br>
+<b><p style="font-size: 25px;">Relationships in Database</p></b>
+<p style="font-size: 20px;">Relationships define how entities are related to each other in a database.</p> <br>
+
+<b><p style="font-size: 25px;">Types of Relationshps</p></b>
+<p style="font-size: 20px;">The main types of relationships are:</p> <br>
+
+<b><p style="font-size: 20px;">1. One-to-One Relationship:</p></b>
+<p style="font-size: 20px;">i. Each entity in the relationship has one related entity.</p>
+<p style="font-size: 20px;">ii. Example: Each employee has one unique employee ID.</p>
+<p style="font-size: 20px;">iii. Representation: Foreign key in one table referencing the primary key of another table.</p> <br>
+<b><p style="font-size: 20px;">2. One-to-Many Relationship</p></b>
+<p style="font-size: 20px;">i. One entity is related to multiple entities.</p>
+<p style="font-size: 20px;">ii. Example: A customer can place multiple orders.</p>
+<p style="font-size: 20px;">iii. Representation: Primary key of one table referenced as a foreign key in another table.
+</p>  <br>
+<b><p style="font-size: 20px;">3. Many-to-Many Relationship</p></b>
+<p style="font-size: 20px;">i. Multiple entities are related to multiple entities.</p>
+<p style="font-size: 20px;">ii. Example: Students can enroll in multiple courses, and courses can have multiple students.</p>
+<p style="font-size: 20px;">iii. Representation: A junction table with foreign keys referencing the related tables.
+</p> <br>
+
+<b><p style="font-size: 25px;">Conclusion</p></b>
+<p style="font-size: 20px;">Understanding database models, designing databases effectively, and managing relationships are fundamental skills for database administrators and developers.</p>
+<p style="font-size: 20px;"> By choosing the appropriate model, following a structured design process, and accurately defining relationships,we can create efficient and reliable databases.</p>
+
+ </html>

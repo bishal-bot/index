@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+    
+            <title>DDL Commands</title>
+        </head>
+        <body style="background-color: beige; line-height:5px; ">
+            
+        <center><b><p style="font-size: 60px; line-height: 25px;">Day 7 Assignment </p>
+        </b></center> 
+        <left><b><p style="font-size: 30px;">Data Definition Language(DDL)</p></b></left>
+    <p style="font-size: 20px;">Today we will be discussing about the data definition language. We will learn about the key DDL commands and their usuages in SQL..</p> <br>
+    <b><p style="font-size: 25px;">Introduction to Data Definition Language</p></b>
+    <p style="font-size: 20px;">Data Definition Language (DDL) is a subset of SQL (Structured Query Language) used to define and manage the structure of database objects such as tables, indexes,</p>
+    <p style="font-size: 20px;"> schemas, and constraints. DDL commands are crucial for creating, altering, and deleting the schema objects in a database. </p> <br>
+    <b><p style="font-size: 25px;">Key DDL Commands</p></b>
+    <p style="font-size: 20px;">The key DDL commands used in SQL are briefly discussed below:</p> <br>
+    <b><p style="font-size: 20px;">1. CREATE</p></b>
+    <b><p style="font-size: 18px;">>Function:</p></b>
+    <p style="font-size: 20px;">The CREATE command is used to create new database objects like tables, indexes, views, and schemas.</p>
+    <b><p style="font-size: 18px;">>Syntax:</p></b>
+    <p style="font-size: 20px;">CREATE TABLE table_name (
+        column1 datatype constraint,
+        column2 datatype constraint,
+        ...
+    );</p> <br>
+    <b><p style="font-size: 20px;">2. ALTER</p></b>
+    <b><p style="font-size: 18px;">>Function:</p></b>
+    <p style="font-size: 20px;">The ALTER command is used to modify the structure of an existing database object.
+    </p>
+    <b><p style="font-size: 18px;">>Syntax:</p></b>
+    <p style="font-size: 20px;">ALTER TABLE table_name
+        ADD column_name datatype constraint;</p> <br>
+    <b><p style="font-size: 20px;">3. DROP</p></b>
+    <b><p style="font-size: 18px;">>Function:</p></b>
+    <p style="font-size: 20px;">
+        The DROP command is used to delete existing database objects.
+    </p>
+    <b><p style="font-size: 18px;">>Syntax:</p></b>
+    <p style="font-size: 20px;">DROP TABLE table_name;
+    </p> <br>
+    <b><p style="font-size: 20px;">4. RENAME</p></b>
+    <b><p style="font-size: 18px;">>Function:</p></b>
+    <p style="font-size: 20px;">The RENAME command is used to change the name of an existing database object.</p>
+    <b><p style="font-size: 18px;">>Syntax:</p></b>
+    <p style="font-size: 20px;">RENAME TABLE old_table_name TO new_table_name;
+    </p> <br>
+    <b><p style="font-size: 25px;">Features and Characteristics of DDL
+    </p></b>
+    <p style="font-size: 20px;">The features and characteristics of DDL are discussed below:</p> <br>
+    <b><p style="font-size: 20px;">1. Schema Definition</p></b>
+    <p style="font-size: 20px;">i. DDL is primarily concerned with defining and modifying the schema or structure of a database.</p>
+    <p style="font-size: 20px;">ii. It allows for the creation and organization of database objects like tables, views, indexes, and relationships.</p> <br>
+    <b><p style="font-size: 20px;">2. Data Integrity and Constraints</p></b>
+    <p style="font-size: 20px;">i. DDL commands can define constraints to enforce data integrity.</p>
+    <p style="font-size: 20px;">ii. Constraints ensure that the data adheres to specific rules and relationships, maintaining the accuracy and consistency of the database.</p> <br>
+    <b><p style="font-size: 20px;">3. Non-Transactional Nature</p></b>
+    <p style="font-size: 20px;">i. Most DDL commands are non-transactional, meaning changes made by DDL commands are immediately committed and cannot be rolled back.</p>
+    <p style="font-size: 20px;">ii. This behavior can vary depending on the DBMS, but it generally means that once a DDL command is executed, the change is permanent.</p> <br>
+    <b><p style="font-size: 20px;">4. Impact on Data</p></b>
+    <p style="font-size: 20px;">i. While DDL commands define and modify the database structure, they do not directly manipulate the data stored within the tables.</p> <br>
+<br>
+<b><p style="font-size: 25px;">Conclusion</p> </b>
+<p style="font-size: 20px;">DDL is a critical component of SQL that focuses on defining and managing the structure of database objects. By using DDL commands, database administrators</p>
+<p style="font-size: 20px;">and developers can create, modify, and delete schema objects, ensuring that the database structure meets the needs of the application and maintains data integrity.</p>
+
+</html>
